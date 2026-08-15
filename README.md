@@ -49,3 +49,12 @@ Practical projects may be used as experimental environments for these ideas. Fin
 **Early research / exploratory.**
 
 The contents are expected to change as hypotheses are tested. Statements should not be treated as production safety claims unless they are backed by explicit evidence and validation.
+
+## License
+
+This repository uses separate licenses for research/documentation and software:
+
+- **Documentation, research materials, architectural concepts, diagrams, and other non-software content:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE)
+- **Software source code, when present:** [Apache License 2.0 (Apache-2.0)](LICENSE-CODE), unless otherwise noted
+
+This split is intentional: the research material should be broadly reusable with attribution, while future reference implementations should use a conventional open-source software license suitable for reuse in both research and production contexts.
