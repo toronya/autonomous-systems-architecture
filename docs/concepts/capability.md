@@ -1,5 +1,7 @@
 # Capability
 
+[日本語](capability.ja.md)
+
 **Status:** Concept — initial definition
 
 ## Definition
