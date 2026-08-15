@@ -1,5 +1,7 @@
 # Design Principles
 
+[日本語](principles.ja.md)
+
 **Status:** Initial principles — expected to evolve with evidence
 
 These principles are not a formal safety standard. They are working architectural rules intended to guide experiments and future reference architectures.
