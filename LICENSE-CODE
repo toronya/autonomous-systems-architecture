@@ -1,0 +1,12 @@
+Apache License 2.0 (Apache-2.0)
+
+Software source code added to this repository is intended to be licensed under the Apache License, Version 2.0, unless a file or component explicitly states otherwise.
+
+Canonical license text:
+https://www.apache.org/licenses/LICENSE-2.0
+
+SPDX-License-Identifier: Apache-2.0
+
+When distributable software is added to this repository, the applicable source files and software distribution should carry the appropriate Apache-2.0 license notice and the complete Apache License 2.0 text should accompany the distribution as required by the license and applicable packaging practice.
+
+Documentation, research notes, architectural concepts, diagrams, and other non-software content are licensed separately under CC BY 4.0. See LICENSE.
