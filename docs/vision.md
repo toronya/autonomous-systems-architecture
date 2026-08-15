@@ -1,5 +1,7 @@
 # Vision
 
+[日本語](vision.ja.md)
+
 **Status:** Initial vision
 
 ## Purpose
@@ -12,9 +14,6 @@ The central concern is not simply whether an AI can make a good decision once. I
 
 > **Autonomous Systems Architecture**  
 > Architecture for systems that preserve goals, constraints, and state over long periods while continuing to observe, reason, act, verify, and acquire capabilities.
->
-> **自律システムアーキテクチャ**  
-> 長期間にわたり、目的・制約・状態を保持しながら、自ら観測・判断・実行・検証・能力獲得を続けるためのアーキテクチャ。
 
 ## Why this matters
 
