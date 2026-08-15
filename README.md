@@ -1,12 +1,11 @@
 # Autonomous Systems Architecture
 
+[日本語](README.ja.md)
+
 A living research repository for design principles, concepts, reference architectures, hypotheses, and experiments toward long-lived autonomous systems.
 
 > **Autonomous Systems Architecture**  
 > Architecture for systems that preserve goals, constraints, and state over long periods while continuing to observe, reason, act, verify, and acquire capabilities.
->
-> **自律システムアーキテクチャ**  
-> 長期間にわたり、目的・制約・状態を保持しながら、自ら観測・判断・実行・検証・能力獲得を続けるためのアーキテクチャ。
 
 ## What this repository is
 
@@ -36,9 +35,17 @@ This work explores questions such as:
 
 ## Initial documents
 
-- [Vision](docs/vision.md)
-- [Design Principles](docs/principles.md)
-- [Capability](docs/concepts/capability.md)
+- [Vision](docs/vision.md) ([日本語](docs/vision.ja.md))
+- [Design Principles](docs/principles.md) ([日本語](docs/principles.ja.md))
+- [Capability](docs/concepts/capability.md) ([日本語](docs/concepts/capability.ja.md))
+
+## Documentation language policy
+
+English is the **canonical language** of this repository. Japanese documents use the `.ja.md` suffix and are maintained as translations for accessibility and discussion.
+
+When an English document and its translation differ in meaning, the English version is authoritative. New architectural concepts and normative wording should be finalized in English first, then reflected in translations.
+
+This convention is intended to scale to additional translations without coupling the architecture to a particular locale.
 
 ## Relationship to experiments
 
