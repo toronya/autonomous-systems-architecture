@@ -1,8 +1,8 @@
-# Vision
+# ビジョン（Vision）
 
-[English (canonical)](vision.md)
+[英語版（正本）](vision.md)
 
-**Status:** Initial vision / 初期ビジョン
+**状態（Status）:** 初期ビジョン（Initial vision）
 
 > この文書は英語版の日本語翻訳です。内容に差異がある場合は英語版を正とします。
 
@@ -43,15 +43,15 @@ Autonomous Systems Architecture は、不確実性、人間が常時利用でき
   ↓
 計画
   ↓
-Policyと制約を確認
+方針（Policy）と制約を確認
   ↓
-許可されたCapabilityを選択
+許可された能力（Capability）を選択
   ↓
 境界付けられた仕組みを通じて実行
   ↓
 結果を検証
   ↓
-State・Evidence・Knowledgeを更新
+状態（State）・根拠（Evidence）・知識（Knowledge）を更新
   ↓
 継続
 ```
@@ -72,49 +72,49 @@ State・Evidence・Knowledgeを更新
 
 ### 状態の継続性
 
-何が起きたか、現在何が真であるか、何が不確実かを理解するために十分な信頼できるStateを保持すること。
+何が起きたか、現在何が真であるか、何が不確実かを理解するために十分な信頼できる状態（State）を保持すること。
 
 ### 境界付けられた実行
 
-既知の入力、影響、権限、検証規則を持つ明示的なCapabilityを通じて行動を実行すること。
+既知の入力、影響、権限、検証規則を持つ明示的な能力（Capability）を通じて行動を実行すること。
 
 ### 検証
 
 実行が成功したという事実だけを正しさの証拠とせず、提案された行動と観測された結果の双方を確認すること。
 
-### 回復とGraceful Degradation
+### 回復と段階的縮退（Graceful Degradation）
 
-ある構成要素やCapabilityの故障が、必ずしもミッション全体の失敗を意味しないこと。可能な範囲で機能を縮退させ、障害を隔離し、Stateを回復し、安全に継続できること。
+ある構成要素や能力（Capability）の故障が、必ずしもミッション全体の失敗を意味しないこと。可能な範囲で機能を縮退させ、障害を隔離し、状態（State）を回復し、安全に継続できること。
 
-### Capabilityの獲得
+### 能力（Capability）の獲得
 
-繰り返される推論や新しい状況への対応から、再利用可能な手順が見つかる可能性があります。システムはそれを新しいCapabilityへ変換できるかもしれませんが、実装、検証、権限付与、登録、監視、廃止という明示的なライフサイクルを経る必要があります。
+繰り返される推論や新しい状況への対応から、再利用可能な手順が見つかる可能性があります。システムはそれを新しい能力（Capability）へ変換できるかもしれませんが、実装、検証、権限付与、登録、監視、廃止という明示的なライフサイクルを経る必要があります。
 
-### Evidenceと検証可能性
+### 根拠（Evidence）と検証可能性
 
-重要な判断や行動は、人間や他のAgentが後から状態遷移の理由を再構成できるよう、永続的なEvidenceを残すこと。
+重要な判断や行動は、人間や他のエージェント（Agent）が後から状態遷移の理由を再構成できるよう、永続的な根拠（Evidence）を残すこと。
 
 ## 知性と実行の関係
 
 信頼できる自律性には、次の分離が必要であるという仮説を置きます。
 
 ```text
-Reasoning Intelligence
+推論知性（Reasoning Intelligence）
         ↓
-Intent / Plan
+意図 / 計画（Intent / Plan）
         ↓
-Policy and Safety Boundary
+方針・安全境界（Policy and Safety Boundary）
         ↓
-Capability Selection
+能力選択（Capability Selection）
         ↓
-Verified / Deterministic Executor
+検証済み / 決定論的実行器（Verified / Deterministic Executor）
         ↓
-Digital or Physical World
+デジタルまたは物理世界（Digital or Physical World）
 ```
 
 推論層は確率的かつ適応的であっても構いません。一方、実行層は、そのタスクで可能な限り明示的・限定的で、機械的に検証可能であるべきです。
 
-## 経験からCapabilityへ
+## 経験から能力（Capability）へ
 
 持続的な自律性への一つの道筋として、繰り返される経験を再利用可能な道具へ変換することが考えられます。
 
@@ -125,7 +125,7 @@ Digital or Physical World
    ↓
 ルールまたは手順の候補
    ↓
-Capabilityを実装
+能力（Capability）を実装
    ↓
 テスト / シミュレーション / 検証
    ↓
@@ -133,21 +133,21 @@ Capabilityを実装
    ↓
 登録
    ↓
-再利用可能なCapability
+再利用可能な能力（Capability）
 ```
 
 これにより、繰り返し発生するすべての仕事を永続的に自由形式の推論問題として扱わずに、システムの運用能力を改善できます。
 
 ## スコープ
 
-このリポジトリは実装非依存を維持することを意図しています。実験からEvidenceを得ることはありますが、概念はアーキテクチャへ取り込む前に一般化します。
+このリポジトリは実装非依存を維持することを意図しています。実験から根拠（Evidence）を得ることはありますが、概念はアーキテクチャへ取り込む前に一般化します。
 
 想定する適用領域には次が含まれます。
 
 - 自律的なソフトウェア開発と運用
 - インフラ・サービス管理
 - 分散・エッジシステム
-- ロボティクスとPhysical AI
+- ロボティクスとフィジカルAI（Physical AI）
 - 産業・社会インフラ
 - 長期航行または通信制約のある宇宙船
 
