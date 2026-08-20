@@ -1,6 +1,6 @@
 # Autonomous Systems Architecture
 
-[English (canonical)](README.md)
+[英語版（正本）](README.md)
 
 長寿命な自律システムの実現に向けて、設計原則・概念・参照アーキテクチャ・仮説・実験を継続的に整理・検証する公開リサーチリポジトリです。
 
@@ -15,12 +15,12 @@
 
 このリポジトリでは、次の種類の知識を明確に区別します。
 
-- **Principles** — 現時点で有用かつ持続的と考える設計原則。
-- **Concepts** — 共通語彙とアーキテクチャ上の構成要素。
-- **Reference architectures** — 特定実装を強制しない再利用可能な構造パターン。
-- **Hypotheses** — まだEvidenceを必要とする仮説。
-- **Experiments** — 仮説を具体的に検証するための実験。
-- **Decisions** — 重要な選択と、その判断理由。
+- **設計原則（Principles）** — 現時点で有用かつ持続的と考える設計原則。
+- **概念（Concepts）** — 共通語彙とアーキテクチャ上の構成要素。
+- **参照アーキテクチャ（Reference architectures）** — 特定実装を強制しない再利用可能な構造パターン。
+- **仮説（Hypotheses）** — まだ根拠（Evidence）を必要とする仮説。
+- **実験（Experiments）** — 仮説を具体的に検証するための実験。
+- **決定（Decisions）** — 重要な選択と、その判断理由。
 
 ## 中心となる問い
 
@@ -30,20 +30,22 @@
 - 確率的な推論と、権限を伴う実行をどのように分離すべきか。
 - 世界へ影響を与える前後で、行動をどのように検証すべきか。
 - 人間が利用できない状況でも、システムはどのように縮退・回復・継続できるか。
-- 繰り返される経験を、安全で再利用可能なCapabilityへどのように変換できるか。
-- 権限、Evidence、State、Memoryをどのように表現すれば、自律的な振る舞いを後から検証可能にできるか。
+- 繰り返される経験を、安全で再利用可能な能力（Capability）へどのように変換できるか。
+- 権限、根拠（Evidence）、状態（State）、記憶（Memory）をどのように表現すれば、自律的な振る舞いを後から検証可能にできるか。
 
 ## 初期文書
 
-- [Vision](docs/vision.ja.md) ([English](docs/vision.md))
-- [Design Principles](docs/principles.ja.md) ([English](docs/principles.md))
-- [Capability](docs/concepts/capability.ja.md) ([English](docs/concepts/capability.md))
+- [ビジョン（Vision）](docs/vision.ja.md) ([英語版](docs/vision.md))
+- [設計原則（Design Principles）](docs/principles.ja.md) ([英語版](docs/principles.md))
+- [能力（Capability）](docs/concepts/capability.ja.md) ([英語版](docs/concepts/capability.md))
 
 ## 文書言語ポリシー
 
-このリポジトリでは、**英語版をCanonical（正本）**とします。日本語文書には `.ja.md` を付け、理解や議論を助ける翻訳版として維持します。
+このリポジトリでは、**英語版を正本（Canonical）**とします。日本語文書には `.ja.md` を付け、理解や議論を助ける翻訳版として維持します。
 
 英語版と翻訳版の意味に差異がある場合は、英語版を正とします。新しいアーキテクチャ概念や規範的な表現は、まず英語版で確定し、その後に翻訳版へ反映します。
+
+日本語版では、固有名詞を除き英語用語を単独表記せず、初出または意味上必要な箇所で日本語と英語を併記します（例: `権限（Authority）`）。
 
 この規約により、将来ほかの言語を追加しても、特定の地域や言語にアーキテクチャを依存させずに拡張できます。
 
@@ -53,9 +55,9 @@
 
 ## ステータス
 
-**Early research / exploratory（初期研究・探索段階）**です。
+**初期研究・探索段階（Early research / exploratory）**です。
 
-仮説の検証に伴って内容は変化します。明示的なEvidenceとValidationによる裏付けがない限り、本文を本番環境における安全性の保証として扱うべきではありません。
+仮説の検証に伴って内容は変化します。明示的な根拠（Evidence）と検証（Validation）による裏付けがない限り、本文を本番環境における安全性の保証として扱うべきではありません。
 
 ## ライセンス
 
@@ -64,4 +66,4 @@
 - **文書、研究資料、アーキテクチャ概念、図、およびその他の非ソフトウェア内容:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE)
 - **ソフトウェアのソースコード（存在する場合）:** 特記がない限り [Apache License 2.0 (Apache-2.0)](LICENSE-CODE)
 
-この分離は意図的です。研究成果は出典表示を条件に広く再利用できるようにし、将来の参照実装は研究用途と本番用途の双方で利用しやすい一般的なOSSライセンスを採用します。
+この分離は意図的です。研究成果は出典表示を条件に広く再利用できるようにし、将来の参照実装は研究用途と本番用途の双方で利用しやすい一般的なOSS（オープンソースソフトウェア）ライセンスを採用します。
